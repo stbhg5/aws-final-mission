@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>파일 업로드 폼</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px 0;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #f4f4f4;
+        width: 30%;
+    }
+</style>
+</head>
+<body>
+
+<h1>백엔드 API 호출</h1>
+
+<form action="https://api.jint-test.link/boards" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <th><label for="title">제목</label></th>
+            <td><input type="text" id="title" name="title"></td>
+        </tr>
+        <tr>
+            <th><label for="content">내용</label></th>
+            <td><textarea id="content" name="content"></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="image">파일 첨부</label></th>
+            <td><input type="file" id="image" name="image"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">저장</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
